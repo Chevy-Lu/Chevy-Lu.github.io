@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  
+  background: rgb(37, 35, 35);
+  color: #f2f2f2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: normal;
+  src: url("[/Resources/Fonts/lato/Lato-Regular.ttf]");
+}
+
+ul {
+  padding-left: 10px;
+}
+
+ul, li {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: rgba(255, 105, 180, 0);
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  word-spacing: 0.5em;
+}
+
+/* This section will edit all the links within the page. */
+
+a:link {
+  color: #d3d3d3e3;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d3d3d3e3;
+}
+
+a:hover {
+  color: rgb(13, 238, 223);
+}
+
+a:active {
+  color: rgb(224, 189, 74);
+}
+
+/* End of links section. */
+
+.twitter {
+  padding-bottom: 0px;
+  background-color: #045f5f00;
+  height: 30px;  
+  padding-top: 10px;
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+}
+
+div.message {
+  border: 1px solid rgba(0, 128, 128, 0);
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 400px;
+}
+
+h1 {
+  border: 15px solid grey;
+  padding: 10px;
+
+}

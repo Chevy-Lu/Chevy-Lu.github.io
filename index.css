@@ -1,0 +1,877 @@
+* {
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  background: rgb(37, 35, 35);
+  color: #f2f2f2;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+body {
+  position: relative;
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: normal;
+  src: url(/Resources/Fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: normal;
+  src: url(/Resources/Fonts/raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Raleway";
+	font-style: italic;
+	font-weight: normal;
+  src: url(/Resources/Fonts/raleway/Raleway-Italic.ttf);
+}
+
+.background {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#background {
+  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+nav {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+}
+
+ul {
+  top: 8px;
+  margin: 10px 0px;
+  padding-left: 15px;
+}
+
+ul, li {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: rgba(255, 105, 180, 0);
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  word-spacing: 0.5em;
+  cursor: pointer;
+}
+
+/* This section will edit all the links within the page. */
+
+a:link {
+  color: #ffffffe3;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffffe3;
+  font-style: italic;
+}
+
+a:hover {
+  color: rgb(13, 238, 223);
+}
+
+a:active {
+  color: rgb(224, 189, 74);
+}
+
+/* End of links section. */
+
+.twitter {
+  padding-bottom: 0px;
+  background-color: #0df0f000;
+  height: 25px;
+  position: absolute;
+  z-index: 2;
+  right: 30px;
+  top: 20px;
+
+}
+
+.image {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  top: -100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  overflow: hidden;
+  align-items: flex-start;
+  margin-left: 160px;
+ }
+
+img#me {
+  margin: 0;
+  padding: 0;
+  max-height: 275px;
+  min-height: 10px;
+  max-width: 205px;
+  min-width: 10px;
+  position: relative;
+  z-index: 5;
+
+}
+
+.content {
+  position: relative;
+  top: -150px;
+}
+
+.content h1  {
+  color: rgb(232, 232, 232);
+  background-color: rgb(12, 130, 130);
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  overflow: hidden;
+  width: 500px;
+  margin-left: 260px;
+  margin-bottom: 80px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  
+}
+
+.content p {
+
+  margin: 0 140px;
+  padding: 60px 60px;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff1b;
+  color: rgb(216, 214, 214);
+  text-align: center;
+  height: auto;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-weight: 100;
+  position: relative;
+
+}
+
+footer {
+  bottom: 0px;
+  width:100%;
+  padding: 3px;
+  position: fixed;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+/* Responsive Website For Mobile.*/
+
+@media screen and (max-width: 1500px) {
+
+  
+  .image {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: -100px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    align-items: flex-start;
+    margin-left: 160px;
+  }
+
+  img#me {
+    margin: 0;
+    padding: 0;
+    max-height: 275px;
+    min-height: 10px;
+    max-width: 205px;
+    min-width: 10px;
+    position: relative;
+    z-index: 5;
+
+  }
+
+  .content {
+    position: relative;
+    top: -150px;
+  }
+
+  .content h1  {
+    color: rgb(232, 232, 232);
+    background-color: rgb(12, 130, 130);
+    font-size: 47px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-weight: 600;
+    overflow: hidden;
+    width: 500px;
+    margin-left: 260px;
+    margin-bottom: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    
+  }
+
+  .content p {
+
+    margin: 0 140px;
+    padding: 60px 60px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff1b;
+    color: rgb(216, 214, 214);
+    text-align: center;
+    height: auto;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-weight: 100;
+    position: relative;
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    position: relative;
+    top: -150px
+  }
+  
+  .content h1  {
+    color: rgb(232, 232, 232);
+    background-color: rgb(12, 130, 130);
+    font-size: 47px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+    overflow: hidden;
+    width: 500px;
+    margin-left: 260px;
+    margin-bottom: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+  
+  }
+  
+  .content p {
+  
+    margin: 50px;
+    padding: 20px 20px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff1b;
+    color: rgb(216, 214, 214);
+    text-align: center;
+    height: auto;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 100;
+    position: relative;
+  
+  }
+  
+  footer {
+    bottom: -120px;
+    width:100%;
+    padding: 3px;
+    position: relative;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
+
+/* Modal-Popup */
+
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  width: 45%;
+  height: 60vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#closeBtn {
+  height: 30px;
+  width: 30px;
+  top: 0px;
+  position: absolute;
+  color: rgb(167, 167, 167);
+  font-size: 50px;
+  right: 0;
+  cursor: pointer;
+  transition-delay: 20ms;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px 5px 5px;
+}
+
+#closeBtn:hover {
+  color: rgb(213, 86, 86);
+  font-weight: bold;
+  text-shadow: 1px 1px 7px rgb(18, 192, 192);
+}
+
+header {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(100, 100, 100);
+  font-weight: 400;
+  font-family: "Raleway";
+  top: -20px;
+}
+
+h1.tags {
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(100, 100, 100);
+  font-size: 23px;
+  font-weight: 100;
+  font-family: "Raleway";
+  text-align: left;
+  top: -10px;
+}
+
+input {
+
+  position: relative;
+  margin: 0 10%;
+  top: -10px;
+  font-size: 15px;
+  color: rgb(100, 100, 100);
+  height: 36px;
+  border: 1px solid #ccc;
+  transition: all .2s ease-in-out;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 75%;
+  top: -20px;
+}
+
+textarea {
+  position: relative;
+  margin: 0 10%;
+  line-height: 30px;
+  font-size: 15px;
+  color: rgb(100, 100, 100);
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  width: 75%;
+  height: 72px;
+  resize: none;
+  top: -20px;
+}
+
+input.submit {
+  background-color: rgb(213, 86, 86);
+  border-radius: 7px;
+  color: white;
+  width: 25%;
+  font-family: "Raleway";
+  font-weight: 900;
+  cursor: pointer;
+  position: relative;
+  align-self: center;
+  top: 3%;
+}
+
+input.submit:hover {
+  box-shadow: 1px 1px 7px rgb(18, 192, 192);
+}
+
+input.submit:active {
+  background-color: hsl(122, 58%, 40%);
+}
+
+@media screen and (max-width: 950px) {
+  input.submit{
+    width: 35%;
+  }
+}
+
+/*********** Mobile Responsive 02/26/2020 *************/
+
+
+@media screen and (max-width: 320px){
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 350px;
+    position: relative;  
+  }
+
+  .background {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  #background {
+    
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  nav {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+
+  }
+
+  ul {
+    width: 100%;
+    left: 0px;
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  ul li {
+    font-size: 15px;
+
+  }
+
+  .twitter {
+    z-index: 2;
+    top: 12px;
+    height: 15px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 290px;
+  }
+
+  .image {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    overflow: hidden;
+   }
+
+  img#me {
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    left: inherit;
+  }
+
+  .content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+    flex-wrap: wrap;
+  }
+
+  .content h1 {
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: rgb(232, 232, 232);
+    background-color: rgb(12, 130, 130);
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 600;
+    margin: 25px;
+    padding: 0 20px;
+    position: relative;
+    
+  }
+
+  .content p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 20px;
+    height: auto;
+  }
+
+  footer {
+    height: 20px;
+    width: 100%;
+    display: fixed;
+    bottom: 10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    font-size: 12px;
+    text-align: center
+    
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+
+  .content p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 568px){
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .background {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  #background {
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  nav {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  ul li {
+    font-size: 15px;
+
+  }
+
+  .twitter {
+    z-index: 2;
+    right: 12px;
+    top: 12px;
+    height: 15px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+
+  .image {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    overflow: hidden;
+   }
+
+  img#me {
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    left: inherit;
+  }
+
+  .content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+    flex-wrap: wrap;
+  }
+
+  .content h1 {
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: rgb(232, 232, 232);
+    background-color: rgb(12, 130, 130);
+    font-size: 47px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+    align-items: center;
+    overflow: hidden;
+    font-weight: 600;
+    margin: 25px;
+    padding: 0 20px;
+    position: relative;
+    
+  }
+
+  .content p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 20px
+  }
+
+  footer {
+    height: 20px;
+    width: 100%;
+    display: fixed;
+    bottom: 10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    font-size: 12px;
+    text-align: center
+    
+  }
+
+}
+
+@media screen and (max-width: 812px){
+
+  body {
+   margin: 0;
+   padding: 0;
+   height: auto;
+  }
+
+  .background {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  #background {
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  nav {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+    left: 8.5px;
+    top: 13px;
+  }
+
+  ul li {
+    font-size: 17px;
+
+  }
+
+  .twitter {
+    z-index: 2;
+    right: 15px;
+    top: 12px;
+    height: 20px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+
+  .image {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    overflow: hidden;
+   }
+
+  img#me {
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    left: inherit;
+  }
+
+  .content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+    flex-wrap: wrap;
+  }
+
+  .content h1 {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    color: rgb(232, 232, 232);
+    background-color: rgb(12, 130, 130);
+    font-size: 47px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    font-weight: 600;
+    margin: 20px;
+    position: relative;
+    
+  }
+
+  .content p {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 20px
+  }
+
+  footer {
+    height: 20px;
+    width: 100%;
+    display: fixed;
+    bottom: 10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    font-size: 15px;
+    text-align: center
+    
+  }
+
+}

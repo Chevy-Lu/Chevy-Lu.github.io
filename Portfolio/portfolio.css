@@ -1,0 +1,499 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html, body {
+
+  background: rgb(36, 37, 35);
+  color: #f2f2f2;
+  font-family: Raleway,Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  overflow: scroll;
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: normal;
+  src: url(/Resources/Fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: normal;
+  src: url(/Resources/Fonts/raleway/Raleway-Regular.ttf);
+}
+
+ul {
+  padding-left: 15px;
+  top: 5px;
+}
+
+ul, li {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: rgba(255, 105, 180, 0);
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  word-spacing: 0.5em;
+  cursor: pointer;
+}
+
+/* This section will edit all the links within the page. */
+
+a:link {
+  color: rgb(232, 232, 232);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(232, 232, 232);
+}
+
+a:hover {
+  color: rgb(13, 238, 223);
+}
+
+a:active {
+  color: rgb(224, 189, 74);
+}
+
+/* End of links section. */
+
+.twitter {
+  padding-bottom: 0px;
+  background-color: #0df0f000;
+  height: 25px;
+  position: absolute;
+  z-index: 2;
+  right: 25px;
+  top: 25px;
+}
+
+h1#page-title {
+position: relative;
+background-color: teal;
+top: 100px;
+text-align: center;
+padding: 10px;
+font-size: 47px;
+font-family: 'Lato', sans-serif;
+letter-spacing: 2px;
+font-weight: 600;
+
+}
+
+/*div.projects {
+  display: flex;
+  border: 5px solid rgba(0, 255, 0, 0);
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  top: 70px;
+  position: relative;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+h2 {
+  position: relative;
+  top: 150px;
+  font-family: 'Lato';
+  border-bottom: 3px solid grey;
+  padding: 10px;
+}*/
+
+.project {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(255, 105, 180, 0);
+  border: 7px solid rgba(255, 196, 0, 0);  
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+
+}
+
+img.project1 {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  
+}
+
+.the-cake-company {
+  position: relative;
+  width: 350px;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 15px;
+  padding-top: 20px;
+  height: auto;
+  backface-visibility: hidden;
+  justify-content: center;
+  display: flex;
+  justify-items: center;
+  border: 3px solid rgba(109, 255, 109, 0);
+  flex-direction: column;
+  align-items: center;
+}
+
+.the-cake-company span {
+  font-size: 15px;
+  
+}
+
+.project1-description {
+  position: relative;
+  width: 350px;
+  display: flex;
+  background-color: white;
+  color: black;
+  overflow: scroll;
+  padding: 15px;
+  height: 160px;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 8px;
+  font-size: 17px;
+  backface-visibility: hidden;
+}
+
+@keyframes mouse-enter {
+  from {top: 0px;}
+  to {top: -120px;}
+}
+
+.projects-animation-enter {
+  animation: mouse-enter 500ms forwards;
+ }
+
+@keyframes mouse-out {
+  from {top: -120px;}
+  to {top: 0px;}
+}
+
+.projects-animation-out {
+  animation: mouse-out 500ms forwards;
+ }
+
+
+/*iv.project2 {
+  width: 275px;
+  height: 400px;
+  position: relative;
+  background-color: hotpink;
+  border: 7px solid rgb(0, 17, 255);
+}
+
+img.project2 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  height: 235px;
+}
+
+div.project3 {
+  width: 275px;
+  height: 400px;
+  position: relative;
+  background-color: hotpink;
+  border: 7px solid rgb(0, 17, 255);
+  margin-right: 1%;
+}
+
+img.project3 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  height: 235px;
+
+}*/
+
+/********************** Modal-Popup *********************/
+
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+
+}
+
+.modal-content {
+  position: relative;
+  width: 45%;
+  height: 60vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  padding: 0;  
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#closeBtn {
+  height: 30px;
+  width: 30px;
+  top: 0px;
+  position: absolute;
+  color: rgb(167, 167, 167);
+  font-size: 50px;
+  right: 0;
+  cursor: pointer;
+  transition-delay: 20ms;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px 5px 5px;
+}
+
+#closeBtn:hover {
+  color: rgb(213, 86, 86);
+  font-weight: bold;
+  text-shadow: 1px 1px 7px rgb(18, 192, 192);
+}
+
+header {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(100, 100, 100);
+  font-weight: 400;
+  font-family: "Raleway";
+  top: -20px;
+}
+
+h1.tags {
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(100, 100, 100);
+  font-size: 23px;
+  font-weight: 100;
+  font-family: "Raleway";
+  text-align: left;
+  top: -10px;
+}
+
+input {
+  
+  position: relative;
+  margin: 0 10%;
+  top: -10px;
+  font-size: 15px;
+  color: rgb(100, 100, 100);
+  height: 36px;
+  border: 1px solid #aaa;
+  transition: all .2s ease-in-out;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  width: 75%;
+  top: -20px;
+}
+
+textarea {
+  position: relative;
+  margin: 0 10%;
+  line-height: 30px;
+  font-size: 15px;
+  color: rgb(100, 100, 100);
+  height: 36px;
+  border: 1px solid #aaa;
+  transition: all .2s ease-in-out;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  width: 75%;
+  height: 72px;
+  resize: none;
+  top: -20px;
+}
+
+input.submit {
+  background-color: rgb(213, 86, 86);
+  border-radius: 7px;
+  color: white;
+  width: 25%;
+  font-family: "Raleway";
+  font-weight: 900;
+  cursor: pointer;
+  position: relative;  
+  align-self: center;
+  top: 3%;
+}
+
+input.submit:hover {
+  box-shadow: 1px 1px 7px rgb(18, 192, 192);
+}
+
+input.submit:active {
+  background-color: hsl(122, 58%, 40%);
+}
+
+@media screen and (max-width: 950px) {
+  input.submit{
+    width: 35%;
+  }
+}
+
+footer {
+  padding: 3px;
+  bottom: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  position: fixed;
+
+}
+
+/******************** Responsive Website **********************/
+
+@media screen and (max-width: 812px) {
+
+  nav {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+    left: 0px;
+    padding: 0;
+    margin: 10px 10px;
+  }
+
+  ul li {
+    font-size: 17px;
+
+  } 
+  
+  .twitter {
+    right: 15px;
+    top: 12px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project {
+    height: auto;
+  }
+
+  img.project1 {
+    width: 300px;
+    height: 250px;   
+  }
+
+  .the-cake-company {
+    position: relative;
+    width: 300px;
+    flex-direction: column;
+  }
+  
+  .the-cake-company span {
+    font-size: 15px;
+    
+  }
+  
+  .project1-description {
+    width: 300px;
+    font-size: 17px;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  nav {
+    top: 0px;
+  }
+
+  ul {
+    width: 100%;
+    left: 0px;
+    padding: 0;
+    margin: 0px 10px 10px 10px;
+  }
+
+  ul li {
+    font-size: 17px;
+    margin: 0px;
+    padding: 0;
+    
+
+  } 
+  
+  .twitter {
+    right: 8px;
+    top: 5px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project {
+    height: auto;
+  }
+
+  img.project1 {
+    width: 300px;
+    height: 250px;   
+  }
+
+  .the-cake-company {
+    position: relative;
+    width: 300px;
+    flex-direction: column;
+  }
+  
+  .the-cake-company span {
+    font-size: 15px;
+    
+  }
+  
+  .project1-description {
+    width: 300px;
+    font-size: 17px;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+
+}

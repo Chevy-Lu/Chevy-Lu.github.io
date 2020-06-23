@@ -1,0 +1,72 @@
+<?php
+
+//include('Config/db_connect.php');
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta author="Emanuel Echevarria" content="Web Develoer Portfolio" />
+  <link href="/index.css" type="text/css" rel="stylesheet" />
+  <link rel="icon" href="Resources/code.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+
+  <title>Emanuel Echevarria</title>
+</head>
+
+<body>
+  <div class="background">
+    <image id="background" src="Resources/Images/398546.jpg" />
+  </div>
+  <nav id="container">
+    <ul id="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li>|</li>
+      <li><a href="Portfolio/portfolio.html">Portfolio</a></li>
+      <li>|</li>
+      <li><a id="contactNav">Contact</a></li>
+    </ul>
+    <a id="twitt" href="https://twitter.com/Chevyhs"><img class="twitter" src="Resources/Images/twitter.png" /></a>
+  </nav>
+  <div class="image">
+    <image id="me" src="Resources/Images/mockup.png"/>
+  </div>
+  <div class="content">
+    <h1 id="aboutMe">About Me</h1>
+    <p>I am a web developer who's passionate about coding. I work with
+      HTML, CSS and JavaScript most popular known as the Front-End languages. I am also learning the
+      Back-End as well. I love working on projects and open sources. Some of my work can be found
+      on this website under the 'Portfolio' tab at the top left of the page. If you have any question and
+      would like to get in touch, please leave me a message and I'll be thrilled to get back to you.</p>
+  </div>
+  
+    <footer>Developed by Emanuel Echevarria</footer>
+
+  <!--Modal-Popup-->
+  <div class="bg-modal">
+    <form class="modal-content" method="POST" action="data.php">
+      <div id="closeBtn">
+        <h3 id="close-modal">&times;</h3>
+      </div>
+      <header>Contact Me</header>
+      <h1 class="tags">Name</h1>
+      <input name="name" type="text" required>
+      <h1 class="tags">Email</h1>
+      <input name="email" type="email" required>
+      <h1 class="tags">Message</h1>
+      <textarea name="message" required></textarea>
+      <input class="submit" name="submit" type="submit" value="Submit">
+    </form>
+  </div>
+
+<?php // TODO: Create a Modal Greeting after form had been sent ?>
+
+  <script type="text/javascript" src="./Contact/form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+* {
+  box-sizing: box-order;
+  
+}
+
+@font-face {
+  src: url(../../Resources/Fonts/Haboro.Sans/HaboroSans-NormRegular.otf);
+  font-family: 'Haboro';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../Resources/Fonts/StephanieMarie/StephanieMarieRegular.ttf);
+  font-family: "Stephanie Marie";
+  font-style: normal;
+}
+
+@font-face {
+  src: url(../../Resources/Fonts/Vincente/Vincente-Bold.ttf);
+  font-family: 'Vincente';
+  font-style: light;
+}
+
+
+body {
+  font-family: 'Haboro';
+  font-size: 24px;
+  /* margin: auto; */
+  background: rgb(255, 255, 255);
+  padding:0;
+  margin: 0;
+}
+
+/* Header */
+
+.container {
+  background: whitesmoke;
+  height: auto;
+  overflow: visible;
+  
+}
+
+@keyframes cakeCo {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+.logo {
+  margin: auto;
+  width: 75%;
+  margin-top: 23vh;
+  opacity: 0;
+  animation-name: cakeCo;
+  animation-duration: 1.5s;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+}
+
+.greeting {
+  font-size: 1.7rem;
+  text-align: center;
+  
+}
+
+/*header h4 {
+  margin-left: 150vh;
+  font-size: 1.3rem;
+}*/
+
+/* Hiding Hamburger Menu ul links */
+
+.navBar ul {
+  display:none;
+}
+
+.top-bar {
+  display: none;
+}
+
+/* Navigation Bar */
+
+.back-to-portfolio {
+ left: 2%;
+ position:absolute;
+ top: 30px;
+}
+
+.nav-bar {
+  top: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  background: rgb(101, 100, 99, 0.97);
+  z-index: 2;
+}
+
+.nav-links {
+  width: 100%;
+  text-align: right;
+  margin-right: 2%;
+}
+
+.nav-links li {
+  display: inline-flex;
+  list-style: none;
+  margin: 5px;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.nav-stars {
+  margin-top: 10px;
+  height: 12px;
+  width: 12px;
+  margin-left: 20px;
+
+}
+
+.business-info {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  height: 500px;
+  background: rgb(101, 100, 99);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  align-items: center;  
+}
+
+.divisory {
+  border: 1px solid whitesmoke;
+  width: 0px;
+  height: 325px;
+}
+
+.business-info #address {
+  position: relative;
+  
+  margin-top: 50px;
+}
+
+.business-info h4 {
+  position: relative;
+  right: 20px;
+  align-self: flex-end;
+  margin: 0;
+}
+
+.business-info p {
+  font-size: 16px;
+  
+}
+
+#hours {
+  margin-bottom: 50px;
+}
+
+iframe {
+  width: 40%;
+  height: 375px;
+  border-radius: 3px;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  margin: 0px;
+  padding: 10px;
+  height: 75px;
+  bottom: 0px;
+}
+
+/* Responsive Website */
+
+@media screen and (max-width: 800px) {
+/* TODO: At this resolution need to change nav bar links into a hamburger menu*/
+
+.business-info{
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 75px;
+  padding-top: 15px;
+}
+
+.divisory {
+  
+  margin-bottom: 50px;
+  border: 1px solid whitesmoke;
+  height: 0px;
+  width: 80%;
+}
+
+iframe { 
+  width: 60%;
+}
+
+/* Hiding Large NavBar */
+ 
+.top-bar {
+  top: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background: rgb(101, 100, 99);
+  z-index: 4;
+  height: 60px;
+  }
+
+  .top-bar ul li {
+   list-style: none;
+   font-size: 22px;
+  }
+
+  .top-bar ul {
+    position: relative;
+    left: -15px;
+  }
+
+.nav-links {
+  display: none;
+}
+ 
+/* Hamburger Menu */
+
+@keyframes right-to-left {
+  from {right: -300px;}
+  to {right: 0px;}
+}
+
+@keyframes left-to-right {
+  from {right: 0px;}
+  to {right: -300px;}
+}
+
+.bg-modal {
+  background-color: rgba(77, 77, 77, 0.454);
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.navBar {
+  /*animation-name: right-to-left;
+  animation-duration: 400ms;*/
+  box-shadow: rgb(0, 0, 0) 0px 0px 20px 1px;
+  width: 300px;
+  height: 100vh;
+  float: right;
+  background: rgb(67, 67, 67);
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  align-items: flex-start;
+  overflow: hidden;
+  text-align: center; 
+  right: -310px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.navBar ul {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
+  overflow: hidden;
+  margin-top: 125px;
+  display: block;
+}
+
+.navBar ul li {
+  list-style: none;
+  line-height: 90px;
+  font-size: 20px;
+  color: white;
+  border-bottom: 1px solid rgb(156, 156, 156);
+  cursor: pointer;
+  width: 100%;
+  left: 0px;
+  margin: 0px;
+  padding-left: 0px;
+  font-family: 'Haboro';
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.091);
+}
+
+#last-li {
+  border-bottom: none;
+}
+
+ul li a {
+  text-decoration: none;
+  display: block;
+}
+
+ul li a:link {
+  color: rgb(255, 255, 255);
+}
+
+ul li a:visited {
+  color: rgb(255, 255, 255);
+}
+
+ul li a:hover {
+  color: rgb(224, 189, 74);
+}
+
+ul li a:active {
+  color: rgb(61, 60, 58);
+}
+
+#hamburger-menu {
+  float: right;
+  top: 2.5px;
+  height: 25px;
+  width: 25px;
+  position: fixed;
+  right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+  animation-name: none;
+  animation-duration: 2s;
+}
+
+#hamburger-menu:active {
+  background-color: rgba(206, 206, 206, 0.207);
+  border-radius: 100%;
+}
+
+.lines {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  z-index: 2;
+  pointer-events: none;
+  border: rgb(186, 186, 186);
+  border-radius: 50px;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.change .line-1 {
+  animation-name: fade-in;
+  animation-duration: 500ms;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
+.change .line-2  {
+  opacity: 0;
+}
+
+.change .line-3 {
+  animation-name: fade-in;
+  animation-duration: 500ms;
+  transform: rotateZ(45deg) translate(-5px, -5px);
+}
+
+
+}
+
+@media screen and (max-width: 650px){
+  .content {
+    margin: 0 65px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .content {
+    margin: 0 60px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .content {
+    margin: 0 55px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .content {
+    margin: 0 50px;
+  }
+}
+
+
+
+/****************** Fresh Flower Cakes *******************/
+
+h5 { 
+  position: relative; 
+  top: 100px;
+}
+
+.container-images {
+  height: 1000px;
+  width: 100%;
+
+}

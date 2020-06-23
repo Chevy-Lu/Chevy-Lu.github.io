@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./hamburger-menu.css">
+  <title>Hamburger Menu</title>
+</head>
+
+<body onclick="outsideClick()">
+  
+  <nav class='navBar'>
+    <ul>
+      <li>
+        <a href="#">home</a>
+      </li>
+      <li>
+        <a href="#">menu</a>
+      </li>
+      <li>
+        <a href="#">gallery</a>
+      </li>
+      <li>
+        <a href="#">about</a>
+      </li>
+      <li>
+        <a href="#">contact us</a>
+      </li>
+      <li id='last-li'>
+        <a href="#">back to portfolio</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div id='hamburger-menu' onclick="toggleNav()">
+    <div class='lines line-1'></div>
+    <div class='lines line-2'></div>
+    <div class='lines line-3'></div>
+  </div>
+
+  <div class="closeNav">
+    <div class='x-1 x'></div>
+    <div class='x-2 x'></div>
+  </div>
+
+  <script src="./hamburger-menu.js"></script>
+</body>
+</html>
