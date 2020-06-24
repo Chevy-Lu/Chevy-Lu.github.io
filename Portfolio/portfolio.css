@@ -372,7 +372,7 @@ footer {
   margin-top: 50px;
   margin-bottom: 0px;
   margin-left: 0px;
-  position: fixed;
+  position: absolute;
 
 }
 
@@ -434,6 +434,8 @@ footer {
   footer {
     width: 100%;
     text-align: center;
+    bottom: 0px;
+    position: absolute;
   }
 
 }
@@ -495,6 +497,8 @@ footer {
   footer {
     width: 100%;
     text-align: center;
+    bottom: 0px;
+    position: absolute;
   }
 
 }
