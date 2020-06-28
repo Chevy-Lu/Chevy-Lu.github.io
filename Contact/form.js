@@ -2,9 +2,10 @@
 
 const contactNav = document.getElementById('contactNav');
 
-//Get Close Button
+//Get Close Button & Close Modal (the element were the close button is located)
 
 const closeBtn = document.getElementById('closeBtn');
+const closeBtnModal = document.getElementById('close-btn-modal');
 
 // Get Modal Container
 
@@ -29,6 +30,8 @@ const closeModal = () => {
 contactNav.addEventListener('click', openModal);
 
 closeBtn.addEventListener('click', closeModal);
+
+closeBtnModal.addEventListener('click', closeModal);
 
 window.addEventListener('click',
   function outsideClick(e){

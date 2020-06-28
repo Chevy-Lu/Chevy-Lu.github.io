@@ -344,8 +344,8 @@ footer {
 
 .modal-content {
   position: relative;
-  width: 45%;
-  height: 60vh;
+  width: 40vh;
+  height: 500px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
@@ -357,22 +357,33 @@ footer {
   overflow: hidden;
 }
 
+#close-btn-modal {
+  /*border: 5px solid lime;*/
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  right: 0px;
+  top: 0px;
+  z-index: 100;
+  
+}
+
 #closeBtn {
   height: 30px;
   width: 30px;
-  top: 0px;
-  position: absolute;
+  position: relative;
   color: rgb(167, 167, 167);
   font-size: 50px;
-  right: 0;
   cursor: pointer;
   transition-delay: 20ms;
-  text-align: center;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 10px 5px 5px;
+  top: -18px;
+  left: 3px;
 }
 
 #closeBtn:hover {
@@ -388,7 +399,7 @@ header {
   color: rgb(100, 100, 100);
   font-weight: 400;
   font-family: "Raleway";
-  top: -20px;
+  top: -10px;
 }
 
 h1.tags {

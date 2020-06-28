@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 html, body {
@@ -123,6 +123,11 @@ h2 {
 
 }
 
+#project1 {
+  height: auto;
+  overflow: hidden;
+}
+
 img.project1 {
   position: relative;
   width: 350px;
@@ -130,7 +135,6 @@ img.project1 {
   margin: 0;
   padding: 0;
   background-color: white;
-  
 }
 
 .the-cake-company {
@@ -146,7 +150,6 @@ img.project1 {
   justify-content: center;
   display: flex;
   justify-items: center;
-  border: 3px solid rgba(109, 255, 109, 0);
   flex-direction: column;
   align-items: center;
 }
@@ -162,7 +165,6 @@ img.project1 {
   display: flex;
   background-color: white;
   color: black;
-  overflow: scroll;
   padding: 15px;
   height: 160px;
   margin: 0;
@@ -245,35 +247,44 @@ img.project3 {
 
 .modal-content {
   position: relative;
-  width: 45%;
-  height: 60vh;
+  width: 40vh;
+  height: 500px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
-  padding: 0;  
-  display: flex;  
+  padding: 0;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   overflow: hidden;
 }
 
+#close-btn-modal {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  right: 0px;
+  top: 0px;
+  z-index: 100;
+}
+
 #closeBtn {
   height: 30px;
   width: 30px;
-  top: 0px;
-  position: absolute;
+  position: relative;
   color: rgb(167, 167, 167);
   font-size: 50px;
-  right: 0;
   cursor: pointer;
   transition-delay: 20ms;
-  text-align: center;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 10px 5px 5px;
+  top: -18px;
+  left: 3px;
 }
 
 #closeBtn:hover {
@@ -360,11 +371,11 @@ input.submit:active {
   background-color: hsl(122, 58%, 40%);
 }
 
-@media screen and (max-width: 950px) {
+/*@media screen and (max-width: 950px) {
   input.submit{
     width: 35%;
   }
-}
+}*/
 
 footer {
   padding: 3px;
@@ -372,7 +383,7 @@ footer {
   margin-top: 50px;
   margin-bottom: 0px;
   margin-left: 0px;
-  position: absolute;
+  position: fixed;
 
 }
 
