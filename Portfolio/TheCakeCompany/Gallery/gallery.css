@@ -613,19 +613,19 @@ h1::first-letter {
 
 @keyframes scale-in {
   from { transform: scale(1)}
-    to {transform: scale(1.07)}
+    to {transform: scale(1.01)}
   
 }
 
 @keyframes scale-out {
-  from { transform: scale(1.07)}
+  from { transform: scale(1.01)}
     to {transform: scale(1)}
 }
 
 .category-images {
   height: 300px;
   width: 250px;
-  background-color: teal;
+  background-color: whitesmoke;
   margin: 40px;  
 }
 
@@ -635,8 +635,10 @@ h1::first-letter {
 
 .category-images:hover {
   animation-name: scale-in;
-  animation-duration: .3s;
+  animation-duration: .2s;
   animation-fill-mode: forwards;
+  
+  
 
 }
 
