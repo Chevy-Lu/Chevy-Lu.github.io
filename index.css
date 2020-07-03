@@ -188,10 +188,12 @@ footer {
   bottom: 0px;
   width:100%;
   padding: 3px;
-  position: absolute;
+  position: relative;
   margin-bottom: 10px;
   margin-left: 10px;
+  
 }
+
 
 
 /* Responsive Website For Mobile.*/
