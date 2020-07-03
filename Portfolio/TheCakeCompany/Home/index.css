@@ -98,14 +98,13 @@ header {
 .logo {
   margin: auto;
   width: 75%;
-  margin-top: 30%;
   opacity: 0;
   animation-name: cakeCo;
   animation-duration: 1.5s;
   animation-delay: 400ms;
   animation-fill-mode: forwards;
   position: relative;
-  top: 7%;
+  top: 0px;
 }
 
 .greeting {
@@ -187,17 +186,19 @@ header {
   flex-wrap: wrap;
   margin: 0 auto;
   
+  
 }
 
 .home-bakes {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 425px;
   box-shadow: grey 25px 10px 60px;
   border-radius: 3px;
 }
 
 #home-bake1 {
   margin-bottom: 150px;
+  margin-right: auto;
 }
 
 #home-bake2 {
@@ -207,6 +208,7 @@ header {
 
 #home-bake3 {
   margin-bottom: 150px;
+  order: 2;
 }
 
 
@@ -235,6 +237,7 @@ header {
   height: auto;
   margin: auto;
   margin-bottom: 225px;
+  order: 0;
   }
 
 #text-photo2::first-letter {
@@ -250,7 +253,7 @@ header {
   width: 40%;
   height: auto;
   margin: auto;
-  order: 1;
+  order: 2;
   margin-bottom: 225px;
 }
 
@@ -396,7 +399,7 @@ footer {
     width: 350px;
     height: 350px;
     margin-left: 40px;
-    order: 1;
+    order: 2;
     margin-bottom: 100px;
   }
 }
