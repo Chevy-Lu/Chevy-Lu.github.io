@@ -188,7 +188,7 @@ footer {
   bottom: 0px;
   width:100%;
   padding: 3px;
-  position: fixed;
+  position: absolute;
   margin-bottom: 10px;
   margin-left: 10px;
 }
