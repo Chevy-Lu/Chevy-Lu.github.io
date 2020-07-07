@@ -222,7 +222,7 @@ footer {
   img#me {
     margin: 0;
     padding: 0;
-    
+    border-radius: 100%;
     position: relative;
     z-index: 5;
 
