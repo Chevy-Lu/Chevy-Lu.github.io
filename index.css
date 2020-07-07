@@ -119,24 +119,28 @@ a:active {
   display: flex;
   justify-content: flex-start;
   top: -100px;
-  width: 100%;
+  width: 600px;
   padding: 0;
   margin: 0;
   height: auto;
-  overflow: hidden;
+  overflow: visible;
   align-items: flex-start;
   margin-left: 160px;
+  /*border: 2px solid pink;*/
  }
 
 img#me {
   margin: 0;
   padding: 0;
-  max-height: 275px;
+  max-height: 250px;
   min-height: 10px;
-  max-width: 205px;
+  max-width: 300px;
   min-width: 10px;
   position: relative;
   z-index: 5;
+  height: 250px;
+  width: 300px;
+  border-radius: 100%;
 
 }
 
@@ -191,7 +195,6 @@ footer {
   position: relative;
   margin-bottom: 10px;
   margin-left: 10px;
-  
 }
 
 
@@ -209,20 +212,17 @@ footer {
     top: -100px;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     height: auto;
     overflow: hidden;
     align-items: flex-start;
-    margin-left: 160px;
+    margin-left: 120px;
   }
 
   img#me {
     margin: 0;
     padding: 0;
-    max-height: 275px;
-    min-height: 10px;
-    max-width: 205px;
-    min-width: 10px;
+    
     position: relative;
     z-index: 5;
 
@@ -274,6 +274,11 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+
+  .image {
+    margin-left: 100px;
+  }
+
   .content {
     position: relative;
     top: -150px
@@ -292,7 +297,7 @@ footer {
     font-weight: 600;
     overflow: hidden;
     width: 500px;
-    margin-left: 260px;
+    margin-left: 200px;
     margin-bottom: 100px;
     height: 100px;
     display: flex;
@@ -552,17 +557,16 @@ input.submit:active {
     display: flex;
     justify-content: center;
     top: -80px;
-    width: 100%;
+    width: 300px;
     padding: 0;
     margin: 0;
-    height: 150px;
+    height: 250px;
     overflow: hidden;
    }
 
   img#me {
     top: 0px;
-    height: 150px;
-    width: 150px;
+    
     margin: 0;
     padding: 0;
     left: inherit;
@@ -823,14 +827,14 @@ input.submit:active {
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 150px;
+    height: 200px;
     overflow: hidden;
    }
 
   img#me {
     top: 0px;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 250px;
     margin: 0;
     padding: 0;
     left: inherit;
