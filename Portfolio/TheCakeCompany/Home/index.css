@@ -942,15 +942,19 @@ iframe {
   
   .logo {
     margin: 0 auto;
-    top: 95px;
+    top: 110px;
     position: relative;
-    height: 170px;
-    width: 450px;
-    left: -13px;
+    height: 110px;
+    width: 325px;
+    left: 0px;
   }
 
   #home-bake1 {
     margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  #text-photo3 {
     margin-bottom: 50px;
   }
 
