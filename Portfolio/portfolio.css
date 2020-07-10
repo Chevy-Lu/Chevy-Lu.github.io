@@ -9,7 +9,7 @@ html, body {
   color: #f2f2f2;
   font-family: Raleway,Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 @font-face {
